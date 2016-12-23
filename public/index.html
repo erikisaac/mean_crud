@@ -3,11 +3,17 @@
 <head>
 	<title>MEAN CRUD</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 	<script type="text/javascript" src="main.js"></script>
 </head>
-<body>
+<body ng-app="mean_crudApp">
 	
 	<h1>MEAN CRUD</h1>
+	<div class="css_online">CSS: Red</div>
+	<div>Angular: 2 + 2 = {{ 2 + 2 }}</div>
+	<div data-ng-controller="HelloWorldController as helloWorldCont">
+		Angular controller: {{ helloWorldCont.helloWorld() }}
+	</div>
 
 </body>
 </html>
