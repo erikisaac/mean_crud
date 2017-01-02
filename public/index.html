@@ -9,10 +9,22 @@
 <body ng-app="mean_crudApp">
 	
 	<h1>MEAN CRUD</h1>
+
+	<h3>To Do:</h3>
+	<p>[] Look at the Criminals lab to learn how to link the DB and acsess it with Angular.</p>
+
+	<h3>Online Checklist:</h3>
 	<div class="css_online">CSS: Red</div>
 	<div>Angular: 2 + 2 = {{ 2 + 2 }}</div>
 	<div data-ng-controller="HelloWorldController as helloWorldCont">
 		Angular controller: {{ helloWorldCont.helloWorld() }}
+
+		<ul id="nameList">
+        	<li ng-repeat="nameFromList in helloWorldCont.all">
+        		Somthing should be here: <strong>{{nameFromList.name}}</strong>
+        	</li>
+      	</ul>
+
 	</div>
 
 </body>
